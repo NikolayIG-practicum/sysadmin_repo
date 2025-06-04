@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - base_setup
+
+- hosts: backend
+  become: yes
+  roles:
+    - nginx_backend
+
+- hosts: proxy
+  become: yes
+  roles:
+    - nginx_proxy

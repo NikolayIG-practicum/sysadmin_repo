@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello from {{ inventory_hostname }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello from {{ inventory_hostname }}!</h1>
+    <p>This is a custom Nginx page served from backend server</p>
+</body>
+</html>
